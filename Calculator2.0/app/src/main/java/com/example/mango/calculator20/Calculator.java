@@ -113,9 +113,11 @@ public class Calculator extends Activity implements PanelSwitcher.Listener, Logi
         mListener.setHandler(mLogic, mPager);
         mDisplay.setOnKeyListener(mListener);
 
-        if (!ViewConfiguration.get(this).hasPermanentMenuKey()) {
+       /*
+       if (!ViewConfiguration.get(this).hasPermanentMenuKey()) {
             createFakeMenu();
         }
+        */
 
         mLogic.resumeWithHistory();
         updateDeleteMode();
